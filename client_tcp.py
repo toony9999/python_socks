@@ -8,7 +8,7 @@ def start_client(host='127.0.0.1', port=8080):
     client_socket.connect((host, port))
     
     # Send a message to the server
-    message = "Hello from the client side!"
+    message = "Hello from the client side!\n"
     client_socket.sendall(message.encode())
     
     # Receive a response from the server
