@@ -21,7 +21,7 @@ def start_server(host='127.0.0.1', port=8080):
     print(f"Received message: {data.decode()}")
     
     # Send a response back to the client
-    con.sendall("Message received".encode())
+    con.sendall("Message received\n".encode())
 
 if __name__ == "__main__":
     start_server()
